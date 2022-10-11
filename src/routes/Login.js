@@ -1,38 +1,28 @@
 import React, { useState } from 'react'
+import styled from 'styled-components'
 
-function Login() {
-    // const [user, setUser] = useState({});
+const Container = styled.div`
+  background-color: white;
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+const Button = styled.div`
+  height: 120px;
+  width: 200px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+`
 
-    // function handleCallbackResponse(response){
-    //   console.log("Encoded JWT ID token: " + response.credential);
-    //   var userObject = jwt_decode(response.credential);
-    //   console.log(userObject)
-    //   setUser(userObject);
-    //   document.getElementById("SignInDiv").hidden = true;
-    // }
-  
-    // function handleSignOut(e) {
-    //   setUser({});
-    //   document.getElementById("SignInDiv").hidden = false;
-    // }
-  
-    // useEffect(()=>{
-    //   /* global google */
-    //   google.accounts.id.initialize({
-    //     client_id : "759846455907-i3k0302v3b1k97pivh13ttkcdsjir8b6.apps.googleusercontent.com",
-    //     callback: handleCallbackResponse
-    //   });
-  
-    //   google.accounts.id.renderButton(
-    //     document.getElementById("SignInDiv"),
-    //     {theme: "outline", size: "large"}
-    //   );
-  
-    //   google.accounts.id.prompt();
-  
-    // }, []);
+function Login(props) {
   return (
-    <div>Login</div>
+    <Container>
+      <Button onClick={() => props.action(true) } >로그인하기</Button>
+    </Container>
   )
 }
 

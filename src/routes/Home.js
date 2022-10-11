@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Navigation from '../components/Navigation'
+import SimpleImageSlider from "react-simple-image-slider";
 import styled from 'styled-components';
-import Navigation from '../components/Navigation';
 import data from '../data';
-
-
 
 const Container = styled.div`
   background-color: white;
@@ -55,33 +54,18 @@ const ItemBody = styled.div`
   font-family: 'cookieRegular';
   font-size: 12px;
 `
-const Dot = styled.div`
-  font-family: 'cookieRegular';
-  position: relative;
-  height: 32px;
-  width: 32px;
-  background-color: red;
-  border-radius: 50%;
-  display: flex; 
-  align-items:center;
-  justify-content: center;
-  color: white;
-  top: 50px;
-  left: 26px;
-` 
 
-function Ranking() {
+
+function Home() {
   return (
     <>
-      <Container className='container-sm'>
+    <Container className='container-sm'>
         <Header>
-          <HeaderMain>Leader Board</HeaderMain>
-          <HeaderSub>오늘의 판매 순위를 알려드립니다.</HeaderSub>
+          <HeaderMain>Board</HeaderMain>
+          <HeaderSub>물건들을 보여드립니다.</HeaderSub>
         </Header>
         <Items>
-          {data.map((item, i) => (
-            <>
-              <Dot  >{i+1}</Dot>
+          {data.map((item) => (
             <Item key={item.id}>
               <img  width={140} height={140} src={item.url} />
               <ItemContent>
@@ -95,13 +79,13 @@ function Ranking() {
                 </ItemBody>
               </ItemContent>
             </Item>
-            </>
           ))}
         </Items>
-      </Container>
-      <Navigation />
+    </Container>
+    
+    <Navigation />
     </>
   )
 }
 
-export default Ranking
+export default Home

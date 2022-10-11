@@ -10,6 +10,7 @@ import reset from 'styled-reset';
 import cookieBlack from './assets/fonts/CookieRun_Black.ttf'
 import cookieBold from './assets/fonts/CookieRun_Bold.ttf'
 import cookieRegular from './assets/fonts/CookieRun_Regular.ttf'
+import Navigation from './components/Navigation';
 
 
 const A = createGlobalStyle`

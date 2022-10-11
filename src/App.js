@@ -1,18 +1,14 @@
 import './App.css';
 import React, { useTransition } from 'react';
 import ReactDOM from 'react-dom';
-import {Routes, Route} from "react-router-dom";
-import { Container, Nav ,Navbar } from 'react-bootstrap'
-import Login from './components/Login';
-import Rr from './components/Rr';
-import Ranking from './components/Ranking';
 import data from './data.js';
 import { useEffect, useState} from 'react';
 import { googleLogout } from '@react-oauth/google';
 import jwt_decode from 'jwt-decode';
+import Card from './components/reader-board/Card';
+import Button from './components/Button';
 
 function App() {
-  // let [product, setProduct] = useState(data);
   const Array = [0, 1, 2, 3, 4];
   
 
@@ -62,38 +58,19 @@ function App() {
           </div>
       } */}
 
-{/* 
- <Navbar  variant="light">
-  <Container>
-    <Nav className="me-auto">
-    <Nav.Link href="/" className="shop_list" >Home</Nav.Link>
-      <Nav.Link href="/login" className="shop_list" >로그인</Nav.Link>
-      <Nav.Link href="/rr" className="shop_list" >게시판</Nav.Link> 
-      <Nav.Link href="/rank" className="shop_list" >랭킹</Nav.Link>
-    </Nav>
-  </Container>
-</Navbar>
-
-<Routes>
-  <Route path="/"/>
-  <Route path="/login" element={<Login />} />
-  <Route path="/rr" element={<Rr />} />
-  <Route path="/rank" element={<Ranking />} />
-</Routes>  */}
-
-
-
     <div className='ranking'>
       <h2>Leaderbord</h2>
       <span>오늘의 랭킹</span>
+      <Button title={'버튼'} height={60} width={120} action={() => console.log("버튼")} />
     {
-      Array.map(()=>{
+      Array.map((v, i)=>{
         return(
-          <div className='p_box'>
-          <img className='p_box_p' src='./logo192.png'/>
-          <h4 className='p_box_r'>1위</h4>
-          <span className='p_box_t'>설명설명설명설명설명설명</span>
-        </div>
+            <Card 
+              key={i}
+              action={() => console.log("페이지 이동하겠습니다")} 
+              title={"1위"}
+              text={'테스트'}  
+            />
         );
       })
     }

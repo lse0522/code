@@ -3,8 +3,18 @@ import { Routes, Route } from 'react-router';
 import Ranking from './routes/Ranking';
 import Login from './routes/Login';
 
+function setScreenSize() {
+  let vh = window.innerHeight * 0.01;
+  console.log(vh)
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
 function App() {
   const [ isLoggedIn, setIsLoggedIn ] = useState(true)
+
+  useEffect(() => {
+    setScreenSize()
+  }, [])
 
   return (
     isLoggedIn 

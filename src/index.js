@@ -14,7 +14,10 @@ import cookieRegular from './assets/fonts/CookieRun_Regular.ttf'
 
 const A = createGlobalStyle`
   ${reset}
-
+  :root {
+    --vh: 100%;
+  }
+  
   @font-face {
         font-family: 'cookieBlack';
         src: url(${cookieBlack}) format('truetype');

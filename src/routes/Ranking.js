@@ -6,10 +6,10 @@ import styled from 'styled-components';
 
 
 const Container = styled.div`
- background-color: white;
- height: 100vh;
- width: 100%;
- padding: 0px;
+  background-color: white;
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  padding: 0px;
 `
 const Header = styled.header`
   display: flex;
@@ -17,13 +17,13 @@ const Header = styled.header`
   padding: 12px;
 `
 const HeaderMain = styled.div`
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 28px;
   font-family: 'cookieBold';
+  margin-bottom: 6px;
 `
 const HeaderSub = styled.div`
   font-family: 'cookieRegular';
-
+  font-size: 14px;
 `
 function Ranking() {
   return (

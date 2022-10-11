@@ -6,8 +6,27 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { createGlobalStyle } from 'styled-components'
 import reset from 'styled-reset';
 
+// fonts
+import cookieBlack from './assets/fonts/CookieRun_Black.ttf'
+import cookieBold from './assets/fonts/CookieRun_Bold.ttf'
+import cookieRegular from './assets/fonts/CookieRun_Regular.ttf'
+
+
 const A = createGlobalStyle`
   ${reset}
+
+  @font-face {
+        font-family: 'cookieBlack';
+        src: url(${cookieBlack}) format('truetype');
+  }
+  @font-face {
+        font-family: 'cookieBold';
+        src: url(${cookieBold}) format('truetype');
+  }
+  @font-face {
+        font-family: 'cookieRegular';
+        src: url(${cookieRegular}) format('truetype');
+  }
 `
 
 

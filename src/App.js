@@ -1,4 +1,4 @@
-import { useEffect, useState} from 'react';
+import { useEffect, useLayoutEffect, useState} from 'react';
 import { Routes, Route } from 'react-router';
 import Ranking from './routes/Ranking';
 import Login from './routes/Login';
@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     setScreenSize()
-  }, [])
+  })
 
   return (
     isLoggedIn 

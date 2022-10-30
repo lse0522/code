@@ -44,8 +44,8 @@ return (
     <Container>
         <Item onClick={() => navigation('/')} >게시판</Item>
         <Item onClick={() => navigation('/Ranking')} >랭킹</Item>
-        <Item>상점</Item>
-        <Item>설정</Item>
+        <Item onClick={() => navigation('/Market')} >상점</Item>
+        <Item onClick={() => navigation('/Set')} >설정</Item>
     </Container>
   )
 }

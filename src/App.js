@@ -1,6 +1,8 @@
 import { useEffect, useLayoutEffect, useState} from 'react';
 import { Routes, Route } from 'react-router';
 import Ranking from './routes/Ranking';
+import Market from './routes/Market';
+import Set from './routes/Set';
 import Login from './routes/Login';
 import Navigation from './components/Navigation';
 import Home from './routes/Home';
@@ -24,6 +26,8 @@ function App() {
     <Routes>
       <Route element={<Home />} path='/' />
       <Route element={<Ranking />} path='/ranking' />
+      <Route element={<Market />} path='/market' />
+      <Route element={<Set />} path='/set' />
     </Routes> 
       :
       // 로그인 안되었을 때

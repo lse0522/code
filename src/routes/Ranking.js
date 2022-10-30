@@ -32,29 +32,32 @@ const Items = styled.div`
   padding: 12px;
 `
 const Item = styled.div`
-  border: 1px solid black;
+  border-bottom: 0.4px solid gray;
   height: 160px;
-  border-radius: 4px;
-  margin-bottom: 12px;
+  margin-bottom: 2px;
   display: flex;
   align-items: center;
-  padding: 8px 8px 8px 8px;
+  padding: 2px;
 `
 const ItemContent = styled.div`
   display: flex;
   flex-direction: column;
-  height: 120px;
+  height: 100px;
   justify-content: space-around;
 `
 const Itemtitle = styled.div`
   font-size: 16px;
   font-family: 'cookieRegular';
-  /* margin-bottom: 8px; */
+  margin-bottom: 2px;
 `
 const ItemBody = styled.div`
-  font-family: 'cookieRegular';
   font-size: 12px;
 `
+const ItemPrice = styled.div`
+  font-weight: 900;
+  font-size: 16px;
+`
+
 const Dot = styled.div`
   font-family: 'cookieRegular';
   position: relative;
@@ -91,8 +94,9 @@ function Ranking() {
                 <ItemBody>
                   {item.content}
                 </ItemBody>
-                <ItemBody>
-                </ItemBody>
+                <ItemPrice>
+                {item.price}
+                </ItemPrice>
               </ItemContent>
             </Item>
             </>

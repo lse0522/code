@@ -28,7 +28,7 @@ const Set_main = styled.div`
   display: flex;
   flex-direction: column;
   margin : 10px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 4px;
   height: 600px;
   font-size: 16px;
@@ -46,6 +46,7 @@ const Set_user = styled.div`
   height: 50px;
   font-size: 16px;
   font-family: 'cookieRegular';
+  align-items: center;
 `
 
 const Set_qna = styled.div`
@@ -58,6 +59,7 @@ const Set_qna = styled.div`
   height: 50px;
   font-size: 16px;
   font-family: 'cookieRegular';
+  align-items: center;
 `
 
 const Set_return = styled.div`
@@ -70,6 +72,7 @@ const Set_return = styled.div`
   height: 50px;
   font-size: 16px;
   font-family: 'cookieRegular';
+  align-items: center;
 `
 
 const Set_call = styled.div`
@@ -82,6 +85,7 @@ const Set_call = styled.div`
   height: 50px;
   font-size: 16px;
   font-family: 'cookieRegular';
+  align-items: center;
 `
 
 
@@ -93,7 +97,7 @@ function Set() {
         <Container>
         <Header>
           <HeaderMain>설정</HeaderMain>
-          <HeaderSub>물건들을 사고 팝니다.</HeaderSub>
+          <HeaderSub></HeaderSub>
         </Header>
         <Set_main>
             <Set_user>

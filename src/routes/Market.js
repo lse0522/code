@@ -24,7 +24,7 @@ const HeaderSub = styled.div`
   font-size: 14px;
 `
 const Upload = styled.div`
-  margin : 50px;
+  margin : 40px;
   display: flex;
   flex-direction: column;
   font-size: 16px;
@@ -39,50 +39,42 @@ const Item = styled.div`
   display: flex;
   flex-direction: column;
   margin : 30px 20px 50px 12px;
-  /* border: 2px solid black; */
   border-radius: 4px;
   height: 500px;
   font-size: 16px;
   font-family: 'cookieRegular';
+  color: gray;
 `
 
 const Item_name = styled.div`
   display: flex;
   margin : 10px;
-  border: 2px solid black;
-  border-radius: 4px;
-  height: 50px;
-  font-size: 16px;
-  font-family: 'cookieRegular';
+  border-bottom: 0.4px solid gray;
+  height: 40px;
   align-items: center;
 `
 
 const Item_ex = styled.div`
   display: flex;
   margin : 10px;
-  border: 2px solid black;
+  border: 0.4px solid gray;
   border-radius: 4px;
   height: 200px;
-  font-size: 16px;
-  font-family: 'cookieRegular';
   align-items: center;
 `
 
 const Item_price = styled.div`
   display: flex;
   margin : 10px;
-  border: 2px solid black;
-  border-radius: 4px;
+  border-bottom: 0.4px solid gray;
   height: 50px;
-  font-size: 16px;
-  font-family: 'cookieRegular';
   align-items: center;
 `
 
 const Item_picture = styled.div`
   display: flex;
   margin : 10px;
-  border: 2px solid black;
+  border: 1px solid gray;
   border-radius: 4px;
   height: 100px;
   font-size: 16px;

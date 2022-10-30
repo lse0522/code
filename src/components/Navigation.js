@@ -1,6 +1,7 @@
 import React, { useEffect, useLayoutEffect, useState } from 'react'
 import { useNavigate } from 'react-router'
 import styled from 'styled-components'
+import { AiOutlineHome } from 'react-icons/fa';
 
 const Container = styled.div`
     width: 100%;
@@ -11,6 +12,7 @@ const Container = styled.div`
     background-color: white;
     position: fixed;
     bottom: 0px;
+
 `
 const Item = styled.div`
     display: flex;
@@ -42,7 +44,10 @@ function Navigation() {
 
 return (
     <Container>
-        <Item onClick={() => navigation('/')} >게시판</Item>
+        <Item onClick={() => navigation('/')} >
+            {/* <AiOutlineHome /> */}
+            게시판
+        </Item>
         <Item onClick={() => navigation('/Ranking')} >랭킹</Item>
         <Item onClick={() => navigation('/Market')} >상점</Item>
         <Item onClick={() => navigation('/Set')} >설정</Item>

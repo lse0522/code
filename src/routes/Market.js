@@ -39,7 +39,7 @@ const Item = styled.div`
   display: flex;
   flex-direction: column;
   margin : 30px 20px 50px 12px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 4px;
   height: 500px;
   font-size: 16px;
@@ -107,7 +107,7 @@ function Market() {
             제품 설명
           </Item_ex>
           <Item_price>
-            가격
+            가격 선정
           </Item_price>
           <Item_picture>
             사진 올리기

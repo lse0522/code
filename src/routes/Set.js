@@ -38,6 +38,7 @@ const Set_main = styled.div`
 
 const Set_user = styled.div`
   display: flex;
+  padding-top: 14px;
   flex-direction: column;
   margin : 10px;
   border: 2px solid black;
@@ -49,6 +50,7 @@ const Set_user = styled.div`
 
 const Set_qna = styled.div`
   display: flex;
+  padding-top: 14px;
   flex-direction: column;
   margin : 10px;
   border: 2px solid black;
@@ -60,6 +62,7 @@ const Set_qna = styled.div`
 
 const Set_return = styled.div`
   display: flex;
+  padding-top: 14px;
   flex-direction: column;
   margin : 10px;
   border: 2px solid black;
@@ -71,6 +74,7 @@ const Set_return = styled.div`
 
 const Set_call = styled.div`
   display: flex;
+  padding-top: 14px;
   flex-direction: column;
   margin : 10px;
   border: 2px solid black;

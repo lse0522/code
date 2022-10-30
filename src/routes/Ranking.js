@@ -38,7 +38,7 @@ const Item = styled.div`
   margin-bottom: 12px;
   display: flex;
   align-items: center;
-  padding: 8px;
+  padding: 8px 8px 8px 8px;
 `
 const ItemContent = styled.div`
   display: flex;
@@ -49,7 +49,7 @@ const ItemContent = styled.div`
 const Itemtitle = styled.div`
   font-size: 16px;
   font-family: 'cookieRegular';
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 `
 const ItemBody = styled.div`
   font-family: 'cookieRegular';

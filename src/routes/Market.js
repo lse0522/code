@@ -43,13 +43,12 @@ const Item = styled.div`
   height: 500px;
   font-size: 16px;
   font-family: 'cookieRegular';
-  color: gray;
 `
 
 const Item_name = styled.div`
   display: flex;
   margin : 10px;
-  border-bottom: 0.4px solid gray;
+  border-bottom: 0.4px solid black;
   height: 40px;
   align-items: center;
 `
@@ -57,7 +56,7 @@ const Item_name = styled.div`
 const Item_ex = styled.div`
   display: flex;
   margin : 10px;
-  border: 0.4px solid gray;
+  border: 0.4px solid black;
   border-radius: 4px;
   height: 200px;
   align-items: center;
@@ -66,7 +65,7 @@ const Item_ex = styled.div`
 const Item_price = styled.div`
   display: flex;
   margin : 10px;
-  border-bottom: 0.4px solid gray;
+  border-bottom: 0.4px solid black;
   height: 50px;
   align-items: center;
 `

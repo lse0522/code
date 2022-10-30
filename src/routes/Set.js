@@ -28,9 +28,7 @@ const Set_main = styled.div`
   display: flex;
   flex-direction: column;
   margin : 10px;
-  /* border: 2px solid black; */
   border-radius: 4px;
-  height: 600px;
   font-size: 16px;
   font-family: 'cookieRegular';
 `
@@ -44,8 +42,6 @@ const Set_user = styled.div`
   border: 2px solid black;
   border-radius: 4px;
   height: 50px;
-  font-size: 16px;
-  font-family: 'cookieRegular';
   align-items: center;
 `
 
@@ -57,8 +53,6 @@ const Set_qna = styled.div`
   border: 2px solid black;
   border-radius: 4px;
   height: 50px;
-  font-size: 16px;
-  font-family: 'cookieRegular';
   align-items: center;
 `
 
@@ -70,8 +64,6 @@ const Set_return = styled.div`
   border: 2px solid black;
   border-radius: 4px;
   height: 50px;
-  font-size: 16px;
-  font-family: 'cookieRegular';
   align-items: center;
 `
 
@@ -83,8 +75,6 @@ const Set_call = styled.div`
   border: 2px solid black;
   border-radius: 4px;
   height: 50px;
-  font-size: 16px;
-  font-family: 'cookieRegular';
   align-items: center;
 `
 
